@@ -1,0 +1,3 @@
+[submodule "src/mls-ts"]
+	path = src/mls-ts
+	url = git@github.com:lukaskaeppeli/CloudMLS-MLS-Submodule.git
