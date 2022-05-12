@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-export abstract class Keystore {
+abstract class Keystore {
 
   public abstract delete();
 
@@ -36,7 +36,7 @@ export abstract class Keystore {
  * Seems like an useless class, but prevents from using localStorage,
  * which is vulnerable to XSS attacks.
  */
-export class NonPerstistentKeystore extends Keystore {
+class NonPerstistentKeystore extends Keystore {
 
   private encryption_key = "";
   private local_key = "";
@@ -87,3 +87,5 @@ export class NonPerstistentKeystore extends Keystore {
   }
 
 }
+
+export { Keystore, NonPerstistentKeystore}

@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import axios, { AxiosInstance } from 'axios';
-import { Keystore, NonPerstistentKeystore } from './src/keystore';
+import { Keystore, NonPerstistentKeystore } from './keystore';
 
 
 export namespace CloudMLS {

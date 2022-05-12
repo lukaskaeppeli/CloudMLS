@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { axiosClient, CloudMLS } from '..';
+import { axiosClient, CloudMLS } from '.';
 import { KeyServer } from './keyserver';
 import { MLSservice } from './mls-wrapper';
 import { Delivery as Delivery_Types, MLS } from './types';

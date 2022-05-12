@@ -1,11 +1,12 @@
 {
   "name": "cloudmls",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "CloudMLS: Additional layer of security for existing cloud based infrastructure",
   "main": "index.ts",
   "directories": {
     "test": "test"
   },
+  "files": ["lib/**/*"],
   "scripts": {
     "build": "tsc -d -p .",
     "test": "mongo users_db --eval \"db.users.remove({}); db.accounts.remove({}); db.groupstates.remove({}) \" && karma start"
@@ -20,6 +21,7 @@
     "axios": "^0.26.0",
     "byte-base64": "^1.1.0",
     "crypto-js": "^4.1.1",
+    "elliptic": "^6.5.4",
     "rxjs": "^7.5.4"
   },
   "devDependencies": {

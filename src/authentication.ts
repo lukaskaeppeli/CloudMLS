@@ -16,7 +16,7 @@ limitations under the License.
 
 import { PBKDF2, SHA512 } from 'crypto-js';
 import { BehaviorSubject } from 'rxjs';
-import { axiosClient, CloudMLS } from '..';
+import { axiosClient, CloudMLS } from '.';
 import { AccountManager } from './accountManager';
 
 

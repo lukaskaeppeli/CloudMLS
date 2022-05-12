@@ -16,7 +16,7 @@ limitations under the License.
 
 import { base64ToBytes, bytesToBase64 } from 'byte-base64';
 import { AES, enc } from 'crypto-js';
-import { axiosClient, CloudMLS } from '..';
+import { axiosClient, CloudMLS } from '.';
 import { KeyServer as KeyServer_Types, MLS } from './types';
 
 

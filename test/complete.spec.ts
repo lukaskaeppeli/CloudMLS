@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 import { bytesToBase64 } from "byte-base64";
-import { axiosClient, CloudMLS } from "../index";
+import { axiosClient, CloudMLS } from "../src/index";
 import { AccountManager } from "../src/accountManager";
 import { Authentication } from "../src/authentication";
 import { Dialogs } from "../src/dialogs";

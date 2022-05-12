@@ -12,7 +12,7 @@ module.exports = function (config) {
         ],
 
         files: [
-            'index.ts',
+            'src/index.ts',
             { pattern: 'src/*.ts' },
             { pattern: 'test/*.ts' },
             { pattern: 'src/mls-ts/src/*.ts' },

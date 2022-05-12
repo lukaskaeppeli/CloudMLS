@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { axiosClient, CloudMLS } from '../index';
+import { axiosClient, CloudMLS } from './index';
 import { base64ToBytes, bytesToBase64 } from 'byte-base64';
 import { MLSservice } from './mls-wrapper';
 import { MLS } from './types';
