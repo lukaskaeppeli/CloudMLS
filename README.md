@@ -4,7 +4,7 @@
 
 CloudMLS is a library that can be used to create an additional layer of security for existing cloud-based platforms.
 This library enables end-to-end encryption while minimizing the required amount of trust in external infrastructures.
-For detailed information, consider reading the [wiki](https://github.com/lukaskaeppeli/cloudmls/blob/master/docs/wiki.md).
+For detailed information, consider reading the [wiki](/docs/wiki.md).
 
 ## Instalation
 Quite simple: `npm install cloudmls`
