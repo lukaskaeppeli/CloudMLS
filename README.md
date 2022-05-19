@@ -7,14 +7,31 @@ This library enables end-to-end encryption while minimizing the required amount 
 For detailed information, consider reading the [wiki](https://github.com/lukaskaeppeli/cloudmls/blob/master/docs/wiki.md).
 
 ## Instalation
+Quite simple: `npm install cloudmls`
 
 ## Example
+We provide an example application that serves as a reference on how to use this library the way it is intended. The ExampleClient
+is a Telegram client and can be found in [this repository](https://github.com/lukaskaeppeli/CloudMLS-TelegramExample).
 
-## Don't forget
-
+## TODO
+There are many things left to do. The TODO list can be found under [Todo.md](/TODO.md).
 
 ## API
 In the following, we provide an overview of the methods that are intended to be used, when developping a client application. For a complete list, please consider reading the [complete API specs](/docs/api.md).
+
+### Main (index.ts)
+-   `keystore: Keystore = new NonPerstistentKeystore()`  
+    The default keystore keeps the values in memory. Set this variable with any alternative keystore that extends the abstract Keystore class.
+
+-   `sessionExpiredCallback: (message: string) => void = (message: string) => console.error(message)`  
+    Defines what the application should do when the session expires. Can be replaced by any callback.
+
+-   `servers = {`
+    `   key_server_url: "http://localhost:8080",`
+    `   delivery_server_url: "http://localhost:8080",`
+    `   auth_server_url: "http://localhost:8080"`
+    `}`  
+    The default adresses for the backends. Set these variables if you're not hosting the key server on localhost:8080.
 
 ### Keystore (src/keystore.ts)  
 -   `delete()`  
@@ -124,17 +141,3 @@ In the following, we provide an overview of the methods that are intended to be 
     `   group_id: string, `  
     `)`  
    Decrypts a message using the MLS data structure of the specified group. Therefore, the group state is fetched from the keyserver, used to decrypt the specified message. The resulting group state is afterwards serialized and stored on the keyserver again, if the decryption changed the datastructure.
-
-### Main (index.ts)
--   `keystore: Keystore = new NonPerstistentKeystore()`  
-    The default keystore keeps the values in memory. Set this variable with any alternative keystore that extends the abstract Keystore class.
-
--   `sessionExpiredCallback: (message: string) => void = (message: string) => console.error(message)`  
-    Defines what the application should do when the session expires. Can be replaced by any callback.
-
--   `servers = {`
-    `   key_server_url: "http://localhost:8080",`
-    `   delivery_server_url: "http://localhost:8080",`
-    `   auth_server_url: "http://localhost:8080"`
-    `}`  
-    The default adresses for the backends. Set these variables if you're not hosting the key server on localhost:8080.
