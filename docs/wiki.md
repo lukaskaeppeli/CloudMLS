@@ -35,7 +35,7 @@ end-to-end encrypted.
 | Open Source                                                                         | No                                                  | No                                                   | Yes                                                   | Yes                                                 | Yes                                                  |
 | E2EE                                                                                |  Yes                                                 |  Secret chats only                                |  Secret chats only                                | Yes                                                 | Yes                                                  |
 | cloud-based                                                                         |  No                                                 | Yes                                                   | Yes                                                   | No                                                | No                                                  |
-| Group chat encryption                                          |  Server-side fan-out (Sender keys)                |  Client-side fan-out                              |                                                   |  Client-side fan-out                            | Client-side fan-out                             |
+| Group chat encryption                                          |  Server-side fan-out (Sender keys)                |  Client-side fan-out                              |  No                                                 |  Client-side fan-out                            | Client-side fan-out                             |
 
 </div>
 
